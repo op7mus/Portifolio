@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+@import './app/themes/dark.scss';
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+
+.align{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+
+}
+
+body{
+    background-color: #1f2536;
+    color: white;
+}
