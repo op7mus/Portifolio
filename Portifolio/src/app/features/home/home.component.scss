@@ -9,7 +9,12 @@ main {
     .content{ 
         padding-top: 1rem;
         width: 100%;
-        min-height: calc(100vh - 3.5rem);
+        min-height: calc(100vh - 3.75rem);
         background-color: rgba(0, 0, 0, 0.8);
+
+
+        .content-section {
+            min-height: calc(100vh - 4rem);
+        }
     }
 }

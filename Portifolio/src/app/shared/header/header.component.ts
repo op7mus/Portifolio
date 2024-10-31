@@ -9,4 +9,8 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  changeLang(event: any){
+    console.log(event.target.value);
+    
+  }
 }
