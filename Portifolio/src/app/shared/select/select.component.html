@@ -1,0 +1,28 @@
+<div class="select align" [id]="id">    
+    <div class="selected align" (click)="open()">
+        @if(options[selectedIndex].img) {
+            <img src="{{options[selectedIndex].img}}" alt="{{options[selectedIndex].img}}" height="15">
+        }
+        <p>{{options[selectedIndex].key}}</p>
+        @if(!opened){
+            <span><mat-icon >arrow_drop_down</mat-icon></span>
+        }
+        @else {
+            <span><mat-icon >arrow_drop_up</mat-icon></span>
+        }
+    </div>
+
+    @if(opened){
+        <div class="options-container align">
+            @for (option of options; track $index) {
+                <div class="option align" (click)="select($index)">
+                    @if (option.img) {
+                        <img src="{{option.img}}" alt="{{option.img}}" height="15">
+                    }
+                    <p>{{option.key}}</p>
+                </div>
+            }
+        </div>
+    }
+
+</div>

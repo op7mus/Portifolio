@@ -1,7 +1,23 @@
 header {
     width: 100%;
     height: 3.75rem ;
+    padding: 0 2.5rem;
     background-color: var(--header-background) ;
     border-bottom: 2px solid var(--ter-color);
     box-shadow: var(--default-shadow);
+    justify-content: space-between;
+
+
+    #select-lang{
+        background-color: transparent;
+        color: white;
+        padding: .25rem;
+        border-radius: 7.5px;
+
+        option{
+            background-color: black;
+        }
+
+        
+    }
 }
